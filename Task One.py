@@ -16,5 +16,5 @@ for i in range (len(mobile_data['data'])):
          manufacture = ((mobile_data['data'][i])['made'])
          price_BDT = (float(((mobile_data['data'][i])['price']).split(' ')[0]))*(mobile_data['exchnage_rate'])
 
-         print(f'{name1}  is made in {manufacture}. The price is {price1} which is almost equal to {price_BDT} BDT')
+         print(f'{name1}  is made in {manufacture}. The price is {price1} which is almost equal to {price_BDT: .2f} BDT')
 
